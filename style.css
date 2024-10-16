@@ -1,0 +1,374 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+h1,
+h3,
+h3 {
+    color: #333;
+}
+
+p {
+    color: #70747a;
+
+}
+
+/* Navbar */
+.navbar-container {
+    width: 100%;
+    height: 80px;
+    background-color: #232a31;
+    padding: 0 2rem;
+}
+
+nav {
+    position: relative;
+}
+
+.logo {
+    width: 50px;
+    margin-top: 15px;
+}
+
+.navbar-items {
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar-items li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.navbar-items a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.navbar-items a:hover{
+    color: #ccc;
+}
+.default-btn{
+    padding: 15px 20px;
+    background-color: #2cc76a;
+    border-radius: 5px;
+}
+.navbar-items .default-btn:hover{
+    background-color: #22bb5f;
+    color: #fff;
+}
+/* main banner */
+.main-baner{
+    background-image: url("../img/mainbanner.png");
+    padding: 10rem 0;
+    background-size: cover;
+    background-position: center;
+}
+.main-baner h1,
+.main-baner p{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: #000 3px 2px 3px;
+}
+.main-baner h1{
+    font-size: 54px;
+}
+.main-baner p{
+    font-size: 32px;
+}
+/* services */
+.services-container{
+    padding: 5rem 0;
+    /* esse padding deu o espaçamento inferior e superior ,lareal 0 */
+}
+.services-container ul{
+    display: flex;
+    /* para deixar os itens um do lado do outro ,padrao flex box */
+    width: 90%;
+    /* 5% de cada lado para preencher os 100 % corretamente */
+    margin: 0 auto;
+}
+.services-container li{
+    flex: 1 1 200;
+    /* grow forma q cresce quando a pagina aumentar,proporção de um e a largura base 200,dizendo que tds tem a mesma largura */
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+    /* padding é o espaçamento interno dos elementos */
+}
+.fas{
+    font-size: 60px;
+    margin-bottom: 15px;
+    /* Para afastar o icone do titulo de segurança, perfirmance e suporte */
+}
+.fa-shield-alt{
+    color: #2cc76a;
+}
+.fa-download{
+    color: #ef3f29;
+}
+.fa-comments{
+    color: #ef8f29;
+}
+.services-container h3{
+    margin-bottom: 25px;
+    /* Afastar o titulo do paragrafo */
+}
+.services-container p{
+    line-height: 24px;
+    /* ler melhor os textos,afasto a distancia netre as linhas dele, as linhas nn ficam tao grudadas e esmagadas uma nas outras */
+}
+/* Css dos preços, padronização de classes atingindo varios elementos */
+/* prices and plans  */
+.pricing-container{
+    padding-bottom: 5rem;
+    /* para afastar da proxima seção */
+    text-align: center;
+}
+.pricing-container h2{
+    font-size: 36px;
+}
+.pricing-container p{
+    font-size: 20px;
+}
+.plans-container{
+    display: 
+    flex;
+    /* colocar um do lado o outro */
+    justify-content: space-between;
+    /* espaça os itens igualmente com o espaço que eu tenho */
+    width: 90%;
+    margin: 50px auto 0;
+    /* 50% em cima e automatico para centralizar o conteudo ja que tem 90 de largura */
+}
+.plan{
+    flex: 1;
+    /* todos terao tamanho igual */
+    max-width: 275px;
+    /* limitação na largura */
+    margin: 0 20px;
+    /* afasta lateralmente uns dis outrs */
+
+}
+.plan ul{
+    padding: 0;
+}
+.plan li{
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    /* Centralização na vertical */
+    background-color: #e8e9ea;
+    color: #333;
+}
+.plan .price{
+    width: 140px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #2cc762;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;
+    margin: 0 auto -50px;
+    /* colocando o preço dentro da lista, a bolinha fica cortada */
+    font-size: 18px;
+    position: relative;
+    /* relative de position ele fica por cima da minha vista , antes ele estava por traz */
+}
+.plan .plan-name{
+    text-align: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #202b34;
+    padding: 50px 0;
+    /* espaçamento interior, em cima e em baixo */
+}
+.plan .plan-btn{
+    background-color: #2cc762;
+    color: #fff;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+    /* caracteristica com o curspor apontando */
+}
+.plan .recommended{
+    background-color: #f45c57;
+}
+/* search domain */
+.searchdomain-container{
+    background-color: #34454e;
+    text-align: center;
+    padding: 5rem 0;
+}
+.searchdomain-container h2{
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 15px;
+    /* afastar do paragrafo */
+}
+.searchdomain-container p{
+    color: #d5d5d5;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.searchdomain-container input{
+    display: block;
+    /* deixar o input em uma linha só */
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    /* inputs ficam no centro */
+}
+.searchdomain-container input[type="text"]{
+    width: 60%;
+    padding:20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    /* afastar do botao */
+}
+.searchdomain-container input[type="submit"]{
+    background-color: #2bc76a;
+    padding: 15px 30px;
+    /* afastamento menor em cima e em baixo e mais largo nas laterais */
+    color:#fff;
+    font-size: 24px;
+    cursor: pointer;
+    /* aspecto de botao quando o usuario passar em cima dele  */
+    opacity: 0.8;
+
+}
+.searchdomain-container input[type="submit"]:hover{
+    opacity: 1;
+    /* deixo o botão um pouco mais apagado quando a pessoa passa o mouse por cima  */
+}
+/* contact form */
+.contact-container{
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+    /* 5 rem em cima e 2 rem em baixo um padding,espaçamento */
+}
+.contact-container h2{
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.contact-container p{
+    font-size: 20px;
+    margin-bottom: 40px;
+    /* afasto meu formulário do texto em cima(p) */
+}
+.contact-container input,
+.contact-container textarea{
+    width: 200px;
+    padding: 10px 20px;
+    /* inferior 10 e laterais 20 */
+    font-size:16px ;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px 20px;
+    /* margin zerada no topo ,10 nas laterais e 20 em baixo */
+
+}
+.contact-container textarea{
+    display: block;
+    /* ocupar apenas uma liha */
+    margin:0 auto 20px;
+    /* faz com que fique no centro */
+    width: 470px;
+    height: 150px;
+}
+.contact-container input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+    background-color: #2cc76a;
+    color: #fff;
+    cursor: pointer;
+}
+/* footer */
+footer{
+    text-align: center;
+    font-weight: bold;
+    /* para deixar a fonte em negrito */
+    margin:20px 0 100px
+}
+/* responsividade para ultilizar em tablets , celulares e ficar bom */
+/* small laptops a partir de 1110px */
+@media(max-width:1110px){
+    .plans-container{
+        width: 95%;
+        /* estou liberando mais espaço para ele de 90 agora 95 */
+    }
+    .plan{
+        margin: 0 5px;
+        /* deixo eles mais proximos um dos outros e assim ganha um espaço e sendo mlr exibida */
+    }
+}
+/* tablet 900px p baixo */
+@media(max-width:900px){
+    .main-baner p{
+    
+    padding: 0 6rem;
+    }
+    .searchdomain-container{
+        padding: 2rem 4rem;
+    }
+}
+/* celular 576px */
+@media(max-width:576px){
+    html,body{
+        overflow-x:hidden ;
+        /* tudo oq passa na miha tela escondido ,nn tem problema de espaçamento */
+    }
+    .navbar-items li{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .main-baner p{
+        padding: 0 2rem;
+    }
+    .services-container ul{
+        flex-direction: column;
+    }
+    .plans-container{
+        flex-direction: column;
+        /* vai ficar um embaixo do outro */
+        width: 100%;
+        /* como esta muito proximo da extremidade ,cou colocar um padding  */
+        padding: 0 2rem;
+    }
+    .plan{
+        width: 100%;
+        max-width: 100%;
+        /* isso faz com que os planos possam ocupar 100% da largura */
+        margin-bottom: 15px;
+    }   
+
+    .searchdomain-container h2{
+        font-size: 28px;
+    }
+    .searchdomain-container input[type="text"]{
+        width: 100%;
+    }
+
+
+
+
+    .contact-container input,
+    .contact-container textarea{
+        width: 100%;
+        margin: 10px 0;
+        /* margem superior e inferior */
+        
+    }
+}
